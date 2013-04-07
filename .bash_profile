@@ -2,6 +2,7 @@
 alias ll='ls -flGh'
 alias sub='subl .'
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
+alias zspec='zeus rspec spec/'
 
 # Environment variables
 export EDITOR=subl
@@ -16,3 +17,4 @@ export PATH="$HOME/NIC/nicplus/node_modules/.bin:$PATH"
 # rbenv
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/user/bin:$PATH"
 eval "$(rbenv init -)"
+[[ -s /Users/wbrady/.nvm/nvm.sh ]] && . /Users/wbrady/.nvm/nvm.sh # This loads NVM
