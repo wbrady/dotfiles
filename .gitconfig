@@ -1,20 +1,25 @@
 [alias]
-  st = status
-  ci = commit
-  co = checkout
+  amend = commit --amend
   br = branch
+  ci = commit
   cl = clone
-  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate
-  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --numstat
-  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=short
-  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=relative
-  le = log --oneline --decorate
-  filelog = log -u
-  fl = log -u
+  co = checkout
   dl = "!git ll -1"
   dlc = diff --cached HEAD^
+  ds = diff --staged
+  filelog = log -u
+  fl = log -u
+  graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   la = "!git config -l | grep alias | cut -c 7-"
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=relative
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=short
+  le = log --oneline --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --numstat
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate
+  st = status -sb
+  standup = log --since '1 day ago' --oneline --author 'wbrady@nearinfinity.com'
+  undo = reset --soft HEAD^
 [color]
   branch = auto
   diff = auto
