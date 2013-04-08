@@ -14,9 +14,10 @@
   ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=relative
   lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --date=short
   le = log --oneline --decorate
-  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate --numstat
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\\ %C(green)(%cr)%Creset" --decorate --numstat
   lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]%Creset" --decorate
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\\ %C(green)(%cr)%Creset" --decorate
+  purr = pull --rebase
   st = status -sb
   standup = log --since '1 day ago' --oneline --author 'wbrady@nearinfinity.com'
   undo = reset --soft HEAD^
