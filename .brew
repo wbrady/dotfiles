@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install packages
+brew install apple-gcc42 
+brew install gdal
+brew install imagemagick
+brew install libgeotiff
+brew install mysql
+brew install readline
+brew install x264
+brew install autoconf
+brew install geos
+brew install jasper
+brew install libpng
+brew install netpbm
+brew install redis
+brew install xvid
+brew install automake
+brew install giflib
+brew install jpeg
+brew install libspatialite
+brew install ossp-uuid
+brew install riak
+brew install yasm
+brew install erlang
+brew install git-extras
+brew install jq
+brew install libtiff
+brew install pkg-config
+brew install ruby-build
+brew install faac
+brew install git-flow
+brew install json-c
+brew install libtool
+brew install postgis
+brew install sqlite
+brew install ffmpeg
+brew install go
+brew install lame
+brew install libxml2
+brew install postgresql
+brew install texi2html
+brew install freetype
+brew install gpp
+brew install libcouchbase
+brew install lzlib
+brew install proj
+brew install unixodbc
+brew install freexl
+brew install hub
+brew install libevent
+brew install memcached
+brew install rbenv
+brew install wget
+
+# Remove outdated versions from the cellar
+brew cleanup
