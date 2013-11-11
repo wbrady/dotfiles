@@ -6,7 +6,11 @@ require 'irb/completion'
 begin
   require 'interactive_editor'
 rescue LoadError => err
-  warn "Couldn't load interactive_editor: #{err}"
+  if defined? Bundler
+    warn "interactive_editor is not in your bundle"
+  else
+    warn "Couldn't load interactive_editor: #{err}"
+  end
 end
 
 # awesome print
@@ -14,7 +18,11 @@ begin
   require 'awesome_print'
   AwesomePrint.irb!
 rescue LoadError => err
-  warn "Couldn't load awesome_print: #{err}"
+  if defined? Bundler
+    warn "awesome_print is not in your bundle"
+  else
+    warn "Couldn't load awesome_print: #{err}"
+  end
 end
 
 # configure irb

@@ -2,8 +2,12 @@
 begin
   require 'hirb'
   HIRB_LOADED = true
-rescue LoadError
-  warn "Couldn't load hirb: #{err}"
+rescue LoadError => err
+  if defined? Bundler
+    warn "hirb is not in your bundle"
+  else
+    warn "Couldn't load hirb: #{err}"
+  end
   HIRB_LOADED = false
 end
 

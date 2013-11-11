@@ -19,8 +19,9 @@
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\\ %C(green)(%cr)%Creset" --decorate
   purr = pull --rebase
   st = status -sb
-  standup = log --since '1 day ago' --oneline --author 'wbrady@nearinfinity.com'
+  standup = log --since '1 day ago' --oneline --author 'wbrady@taximagic.com'
   undo = reset --soft HEAD^
+	stash-unapply = !git stash show -p | git apply -R
 [color]
   branch = auto
   diff = auto
@@ -28,8 +29,8 @@
   status = auto
 [core]
   excludesfile = /Users/wbrady/.gitignore
-  editor = mate -w
-  pager = less -r
+  editor = subl 
+  pager = less -F -X
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
@@ -38,14 +39,14 @@
 [push]
   default = current
 [sendemail]
-  from = Will Brady <wbrady@nearinfinity.com>
+  from = Will Brady <wbrady@taximagic.com>
   chainreplyto = false
   confirm = auto
   suppresscc = all
   smtpencryption = tls
   smtpserver = smtp.gmail.com
-  smtpuser = wbrady@nearinfinity.com
+  smtpuser = wbrady@taximagic.com
   smtpserverport = 587
 [user]
-	email = wbrady@nearinfinity.com
-	name = Will Brady
+  email = willgbrady@gmail.com
+  name = Will Brady
