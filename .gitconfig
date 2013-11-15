@@ -21,6 +21,7 @@
   purr = pull --rebase
   st = status -sb
   standup = log --since '1 day ago' --oneline --author 'wbrady@taximagic.com'
+  today = log --since 'midnight' --author 'wbrady@taximagic.com' --oneline
   undo = reset --soft HEAD^
 	stash-unapply = !git stash show -p | git apply -R
 [color]
