@@ -4,6 +4,7 @@
   ci = commit
   cl = clone
   co = checkout
+  dff = diff
   dl = "!git ll -1"
   dlc = diff --cached HEAD^
   ds = diff --staged
