@@ -61,6 +61,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="/usr/local/webp:$PATH"
 export PATH="/opt/oracle/instantclient_10_2:$PATH"
+export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 
 # RC ENV vars
 export CRC='localhost:8000'
