@@ -26,3 +26,8 @@ set shiftwidth=2
 set incsearch
 
 filetype plugin indent on
+
+" Remaps
+noremap ; :
+noremap : ;
+
