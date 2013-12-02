@@ -23,5 +23,6 @@ set number
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set incsearch
 
 filetype plugin indent on
