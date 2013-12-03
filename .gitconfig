@@ -31,7 +31,7 @@
   status = auto
 [core]
   excludesfile = /Users/wbrady/.gitignore
-  editor = subl 
+  editor = subl -n -w
   pager = less -F -X
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
