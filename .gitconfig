@@ -19,6 +19,7 @@
   lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\\ %C(green)(%cr)%Creset" --decorate
   purr = pull --rebase
+  sl = stash list
   st = status -sb
   standup = log --since '1 day ago' --oneline --author 'Will Brady' --no-merges
   today = log --since 'midnight' --author 'wbrady@taximagic.com' --oneline
