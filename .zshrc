@@ -56,6 +56,10 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Environment variables
 export EDITOR=subl
 
+# go
+export GOPATH="/Users/wbrady/projects"
+export GOROOT="/usr/local/Cellar/go/1.2"
+
 # PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
