@@ -58,7 +58,7 @@ export EDITOR=subl
 
 # go
 export GOPATH="/Users/wbrady/projects"
-export GOROOT="/usr/local/Cellar/go/1.2"
+export GOROOT="/usr/local/Cellar/go/1.2/libexec"
 
 # PATH
 export PATH="/usr/local/heroku/bin:$PATH"
