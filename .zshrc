@@ -57,7 +57,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export EDITOR=subl
 
 # go
-export GOPATH="/Users/wbrady/projects"
+export GOPATH="/Users/wbrady/projects/go"
 export GOROOT="/usr/local/Cellar/go/1.2/libexec"
 
 # PATH
