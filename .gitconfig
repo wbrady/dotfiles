@@ -5,6 +5,7 @@
   cl = clone
   co = checkout
   dff = diff
+  dif = diff
   dl = "!git ll -1"
   dlc = diff --cached HEAD^
   ds = diff --staged
