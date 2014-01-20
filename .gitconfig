@@ -4,7 +4,7 @@
   ci = commit
   cl = clone
   co = checkout
-  ctags = '!.git/hooks/ctags'
+  ctags = "!.git/hooks/ctags"
   dff = diff
   dif = diff
   dl = "!git ll -1"
