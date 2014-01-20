@@ -4,6 +4,7 @@
   ci = commit
   cl = clone
   co = checkout
+  ctags = '!.git/hooks/ctags'
   dff = diff
   dif = diff
   dl = "!git ll -1"
@@ -54,3 +55,5 @@
 [user]
   email = willgbrady@gmail.com
   name = Will Brady
+[init]
+  templatedir = '~/.git_template'

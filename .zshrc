@@ -48,7 +48,7 @@ plugins=()
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/opt/oracle/instantclient_10_2:/usr/local/webp:/usr/local/go/bin:/usr/local/heroku/bin:/Users/wbrady/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+export PATH=/opt/oracle/instantclient_10_2:/usr/local/webp:/usr/local/go/bin:/usr/local/heroku/bin:/Users/wbrady/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH
 
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
