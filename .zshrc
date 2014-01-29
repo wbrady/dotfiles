@@ -100,6 +100,7 @@ export CCP_DEV_APP_PORT=8001
 
 PATH=/Users/wbrady/.ghf/bin:$PATH
 
+[[ -s /Users/wbrady/github_account.sh ]] && . /Users/wbrady/github_account.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
