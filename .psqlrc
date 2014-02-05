@@ -26,5 +26,5 @@
 
 \timing
 
-set search_path = vehicle, positioning, keymaster, public, topology;
+set search_path = vehicle, location, positioning, keymaster, public, topology;
 
