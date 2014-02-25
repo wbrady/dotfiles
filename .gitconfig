@@ -58,3 +58,8 @@
   name = Will Brady
 [init]
   templatedir = '~/.git_template'
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[branch]
+  autosetuprebase = always
