@@ -57,7 +57,7 @@
   email = willgbrady@gmail.com
   name = Will Brady
 [init]
-  templatedir = '~/.git_template'
+  templatedir = /Users/wbrady/.git_template
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
