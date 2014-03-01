@@ -1,5 +1,7 @@
 A collection of my dotfiles
 
+Using [rcm](https://github.com/thoughtbot/rcm#installation)
+
 ```
-source setup.sh
+rcup
 ```
