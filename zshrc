@@ -54,19 +54,24 @@ export PATH=/opt/oracle/instantclient_10_2:/usr/local/webp:/usr/local/go/bin:/us
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Environment variables
-export EDITOR=subl
+export EDITOR="subl -w"
 
 # go
-export GOPATH="/Users/wbrady/projects/go"
-export GOROOT="/usr/local/Cellar/go/1.2/libexec"
+# export GOPATH="/Users/wbrady/projects/go"
+# export GOROOT="/usr/local/Cellar/go/1.2/libexec"
 
 # PATH
-export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+# export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="/usr/local/webp:$PATH"
 export PATH="/opt/oracle/instantclient_10_2:$PATH"
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+export PATH="/Users/wbrady/projects/devops-chef/bin:$PATH"
+export PATH="/usr/local/Cellar/maven/3.3.1/bin:$PATH"
+export PATH="/Users/wbrady/bin:$PATH"
+export PATH="/Library/Frameworks/R.framework/Versions/3.0/Resources/bin:$PATH"
+export PATH="$PATH:/usr/local/sbin"
 
 # RC ENV vars
 export CRC='localhost:8000'
@@ -104,3 +109,13 @@ PATH=/Users/wbrady/.ghf/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Docker setup
+$(boot2docker shellinit)
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+[[ -s "/Users/wbrady/.gvm/scripts/gvm" ]] && source "/Users/wbrady/.gvm/scripts/gvm"
+
+export PATH="/Users/wbrady/.gvm/pkgsets/go1.3.3/global/bin:$PATH"

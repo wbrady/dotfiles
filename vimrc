@@ -24,6 +24,14 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set incsearch
+set hlsearch
+set ruler
+set showcmd
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+set mouse=a
 
 filetype plugin indent on
 

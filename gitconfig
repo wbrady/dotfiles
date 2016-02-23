@@ -9,6 +9,7 @@
   dif = diff
   dl = "!git ll -1"
   dlc = diff --cached HEAD^
+  dmerged = !/Users/wbrady/projects/git_delete_merged
   ds = diff --staged
   filelog = log -u
   fl = log -u
@@ -56,10 +57,14 @@
 [user]
   email = willgbrady@gmail.com
   name = Will Brady
-[init]
-  templatedir = /Users/wbrady/.git_template
 [filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
-[branch]
-  autosetuprebase = always
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
